@@ -185,12 +185,13 @@ a:hover, a:focus {
 .intro {
   display: table;
   width: 100%;
-  height: auto;
+  height: 100%;
   padding-top: 50px;
   text-align: center;
   color: white;
+  margin-bottom: 45px;
 }
-/* line 181, ../sass/grayscale.scss */
+/* line 182, ../sass/grayscale.scss */
 .intro .intro-bg {
   width: 100%;
   height: 100%;
@@ -206,27 +207,32 @@ a:hover, a:focus {
   background-size: cover;
   -o-background-size: cover;
 }
-/* line 196, ../sass/grayscale.scss */
+/* line 197, ../sass/grayscale.scss */
 .intro .intro-overlay {
   width: 100%;
   height: 100%;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.55);
 }
-/* line 202, ../sass/grayscale.scss */
+/* line 203, ../sass/grayscale.scss */
 .intro .intro-body {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 205, ../sass/grayscale.scss */
+/* line 206, ../sass/grayscale.scss */
 .intro .intro-body .brand-heading {
   font-size: 40px;
 }
-/* line 208, ../sass/grayscale.scss */
+/* line 209, ../sass/grayscale.scss */
 .intro .intro-body .intro-text {
   font-size: 18px;
 }
-/* line 212, ../sass/grayscale.scss */
+/* line 213, ../sass/grayscale.scss */
+.intro .intro-body .row {
+  margin-top: 75px;
+  margin-bottom: 0;
+}
+/* line 218, ../sass/grayscale.scss */
 .intro .btn-circle {
   display: none;
 }
@@ -236,17 +242,17 @@ a:hover, a:focus {
     height: 100%;
     padding: 0;
   }
-  /* line 219, ../sass/grayscale.scss */
+  /* line 225, ../sass/grayscale.scss */
   .intro .intro-body .brand-heading {
     font-size: 100px;
   }
-  /* line 222, ../sass/grayscale.scss */
+  /* line 228, ../sass/grayscale.scss */
   .intro .intro-body .intro-text {
     font-size: 26px;
   }
 }
 
-/* line 229, ../sass/grayscale.scss */
+/* line 235, ../sass/grayscale.scss */
 .btn-circle {
   width: 70px;
   height: 70px;
@@ -261,20 +267,20 @@ a:hover, a:focus {
   -moz-transition: background .3s ease-in-out;
   transition: background .3s ease-in-out;
 }
-/* line 242, ../sass/grayscale.scss */
+/* line 248, ../sass/grayscale.scss */
 .btn-circle:hover, .btn-circle:focus {
   outline: none;
   color: white;
   background: rgba(255, 255, 255, 0.1);
 }
-/* line 248, ../sass/grayscale.scss */
+/* line 254, ../sass/grayscale.scss */
 .btn-circle i.animated {
   -webkit-transition-property: -webkit-transform;
   -webkit-transition-duration: 1s;
   -moz-transition-property: -moz-transform;
   -moz-transition-duration: 1s;
 }
-/* line 255, ../sass/grayscale.scss */
+/* line 261, ../sass/grayscale.scss */
 .btn-circle:hover i.animated {
   -webkit-animation-name: pulse;
   -moz-animation-name: pulse;
@@ -314,13 +320,13 @@ a:hover, a:focus {
     transform: scale(1);
   }
 }
-/* line 302, ../sass/grayscale.scss */
+/* line 308, ../sass/grayscale.scss */
 .content-section {
   min-height: 100%;
   padding-top: 60px;
 }
 
-/* line 307, ../sass/grayscale.scss */
+/* line 313, ../sass/grayscale.scss */
 .download-section {
   width: 100%;
   padding: 50px 0;
@@ -332,7 +338,7 @@ a:hover, a:focus {
   -o-background-size: cover;
 }
 
-/* line 319, ../sass/grayscale.scss */
+/* line 325, ../sass/grayscale.scss */
 #map {
   width: 100%;
   height: 200px;
@@ -340,23 +346,23 @@ a:hover, a:focus {
 }
 
 @media (min-width: 767px) {
-  /* line 326, ../sass/grayscale.scss */
+  /* line 332, ../sass/grayscale.scss */
   .content-section {
     padding-top: 150px;
   }
 
-  /* line 330, ../sass/grayscale.scss */
+  /* line 336, ../sass/grayscale.scss */
   .download-section {
     padding: 100px 0;
   }
 
-  /* line 334, ../sass/grayscale.scss */
+  /* line 340, ../sass/grayscale.scss */
   #map {
     height: 400px;
     margin-top: 250px;
   }
 }
-/* line 340, ../sass/grayscale.scss */
+/* line 346, ../sass/grayscale.scss */
 .btn {
   text-transform: uppercase;
   font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -367,13 +373,13 @@ a:hover, a:focus {
   border-radius: 0;
 }
 
-/* line 350, ../sass/grayscale.scss */
+/* line 356, ../sass/grayscale.scss */
 .btn-default {
   border: 1px solid #42DCA3;
   color: #42DCA3;
   background-color: transparent;
 }
-/* line 354, ../sass/grayscale.scss */
+/* line 360, ../sass/grayscale.scss */
 .btn-default:hover, .btn-default:focus {
   border: 1px solid #42DCA3;
   outline: none;
@@ -381,68 +387,68 @@ a:hover, a:focus {
   background-color: #42DCA3;
 }
 
-/* line 363, ../sass/grayscale.scss */
+/* line 369, ../sass/grayscale.scss */
 ul.banner-social-buttons {
   margin-top: 0;
 }
 @media (max-width: 1199px) {
-  /* line 363, ../sass/grayscale.scss */
+  /* line 369, ../sass/grayscale.scss */
   ul.banner-social-buttons {
     margin-top: 15px;
   }
 }
 @media (max-width: 767px) {
-  /* line 369, ../sass/grayscale.scss */
+  /* line 375, ../sass/grayscale.scss */
   ul.banner-social-buttons li {
     display: block;
     margin-bottom: 20px;
     padding: 0;
   }
-  /* line 373, ../sass/grayscale.scss */
+  /* line 379, ../sass/grayscale.scss */
   ul.banner-social-buttons li:last-child {
     margin-bottom: 0;
   }
 }
 
-/* line 380, ../sass/grayscale.scss */
+/* line 386, ../sass/grayscale.scss */
 footer {
   padding: 50px 0;
 }
-/* line 382, ../sass/grayscale.scss */
+/* line 388, ../sass/grayscale.scss */
 footer p {
   margin: 0;
 }
 
-/* line 387, ../sass/grayscale.scss */
+/* line 393, ../sass/grayscale.scss */
 ::-moz-selection {
   text-shadow: none;
   background: #fcfcfc;
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* line 393, ../sass/grayscale.scss */
+/* line 399, ../sass/grayscale.scss */
 ::selection {
   text-shadow: none;
   background: #fcfcfc;
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* line 399, ../sass/grayscale.scss */
+/* line 405, ../sass/grayscale.scss */
 img::selection {
   background: transparent;
 }
 
-/* line 403, ../sass/grayscale.scss */
+/* line 409, ../sass/grayscale.scss */
 img::-moz-selection {
   background: transparent;
 }
 
-/* line 407, ../sass/grayscale.scss */
+/* line 413, ../sass/grayscale.scss */
 body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
 
-/* line 411, ../sass/grayscale.scss */
+/* line 417, ../sass/grayscale.scss */
 .row {
   margin-bottom: 30px;
 }
