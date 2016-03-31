@@ -1,0 +1,448 @@
+/* line 4, ../sass/grayscale.scss */
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Lora","Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: white;
+  background-color: black;
+}
+
+/* line 12, ../sass/grayscale.scss */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 17, ../sass/grayscale.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 35px;
+  text-transform: uppercase;
+  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* line 30, ../sass/grayscale.scss */
+p {
+  margin: 0 0 25px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  /* line 30, ../sass/grayscale.scss */
+  p {
+    margin: 0 0 35px;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+
+/* line 41, ../sass/grayscale.scss */
+a {
+  color: #42DCA3;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+/* line 46, ../sass/grayscale.scss */
+a:hover, a:focus {
+  text-decoration: none;
+  color: #1d9b6c;
+}
+
+/* line 53, ../sass/grayscale.scss */
+.light {
+  font-weight: 400;
+}
+
+/* line 57, ../sass/grayscale.scss */
+.navbar-custom {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: black;
+}
+/* line 63, ../sass/grayscale.scss */
+.navbar-custom .navbar-toggle {
+  padding: 4px 6px;
+  font-size: 16px;
+  color: white;
+}
+/* line 67, ../sass/grayscale.scss */
+.navbar-custom .navbar-toggle:focus, .navbar-custom .navbar-toggle:active {
+  outline: none;
+}
+/* line 72, ../sass/grayscale.scss */
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+}
+/* line 74, ../sass/grayscale.scss */
+.navbar-custom .navbar-brand:focus {
+  outline: none;
+}
+/* line 78, ../sass/grayscale.scss */
+.navbar-custom a {
+  color: white;
+}
+/* line 83, ../sass/grayscale.scss */
+.navbar-custom .nav li a {
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+}
+/* line 87, ../sass/grayscale.scss */
+.navbar-custom .nav li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  outline: none;
+  background-color: transparent;
+}
+/* line 92, ../sass/grayscale.scss */
+.navbar-custom .nav li a:focus, .navbar-custom .nav li a:active {
+  outline: none;
+  background-color: transparent;
+}
+/* line 98, ../sass/grayscale.scss */
+.navbar-custom .nav li.active {
+  outline: none;
+}
+/* line 100, ../sass/grayscale.scss */
+.navbar-custom .nav li.active a {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+/* line 102, ../sass/grayscale.scss */
+.navbar-custom .nav li.active a:hover {
+  color: white;
+}
+/* line 109, ../sass/grayscale.scss */
+.navbar-custom .nav li.dropdown.active > a {
+  background-color: black;
+}
+/* line 115, ../sass/grayscale.scss */
+.navbar-custom .nav li.objectif a {
+  background-color: black;
+}
+/* line 121, ../sass/grayscale.scss */
+.navbar-custom .nav .objectifs-menu {
+  padding: 15px 5px;
+  background-color: black;
+  color: white;
+}
+/* line 128, ../sass/grayscale.scss */
+.navbar-custom .nav .objectifs-menu li.objectif.active a:hover {
+  background-color: transparent !important;
+}
+/* line 132, ../sass/grayscale.scss */
+.navbar-custom .nav .objectifs-menu li.objectif a {
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+  -webkit-transition: color .3s ease-in-out;
+  -moz-transition: color .3s ease-in-out;
+  transition: color .3s ease-in-out;
+}
+/* line 139, ../sass/grayscale.scss */
+.navbar-custom .nav .objectifs-menu li.objectif a:hover {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+/* line 143, ../sass/grayscale.scss */
+.navbar-custom .nav .objectifs-menu li.objectif a:focus, .navbar-custom .nav .objectifs-menu li.objectif a:active {
+  outline: none;
+  color: white;
+  background-color: transparent;
+}
+@media (min-width: 768px) {
+  /* line 57, ../sass/grayscale.scss */
+  .navbar-custom {
+    padding: 20px 0;
+    border-bottom: none;
+    letter-spacing: 1px;
+    background: transparent;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+  /* line 161, ../sass/grayscale.scss */
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    background: black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  /* line 166, ../sass/grayscale.scss */
+  .navbar-custom.top-nav-collapse li.dropdown.open {
+    color: #42DCA3;
+    background-color: transparent;
+  }
+}
+
+/* line 174, ../sass/grayscale.scss */
+.intro {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  text-align: center;
+  color: white;
+}
+/* line 181, ../sass/grayscale.scss */
+.intro .intro-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  background: url(../img/toon.gif) no-repeat center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+/* line 196, ../sass/grayscale.scss */
+.intro .intro-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+/* line 202, ../sass/grayscale.scss */
+.intro .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 205, ../sass/grayscale.scss */
+.intro .intro-body .brand-heading {
+  font-size: 40px;
+}
+/* line 208, ../sass/grayscale.scss */
+.intro .intro-body .intro-text {
+  font-size: 18px;
+}
+/* line 212, ../sass/grayscale.scss */
+.intro .btn-circle {
+  display: none;
+}
+@media (min-width: 768px) {
+  /* line 174, ../sass/grayscale.scss */
+  .intro {
+    height: 100%;
+    padding: 0;
+  }
+  /* line 219, ../sass/grayscale.scss */
+  .intro .intro-body .brand-heading {
+    font-size: 100px;
+  }
+  /* line 222, ../sass/grayscale.scss */
+  .intro .intro-body .intro-text {
+    font-size: 26px;
+  }
+}
+
+/* line 229, ../sass/grayscale.scss */
+.btn-circle {
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+  padding: 7px 16px;
+  border: 2px solid white;
+  border-radius: 100% !important;
+  font-size: 40px;
+  color: white;
+  background: transparent;
+  -webkit-transition: background .3s ease-in-out;
+  -moz-transition: background .3s ease-in-out;
+  transition: background .3s ease-in-out;
+}
+/* line 242, ../sass/grayscale.scss */
+.btn-circle:hover, .btn-circle:focus {
+  outline: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+/* line 248, ../sass/grayscale.scss */
+.btn-circle i.animated {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
+}
+/* line 255, ../sass/grayscale.scss */
+.btn-circle:hover i.animated {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes pulse {
+  from {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/* line 302, ../sass/grayscale.scss */
+.content-section {
+  min-height: 100%;
+  padding-top: 60px;
+}
+
+/* line 307, ../sass/grayscale.scss */
+.download-section {
+  width: 100%;
+  padding: 50px 0;
+  color: white;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+/* line 319, ../sass/grayscale.scss */
+#map {
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+}
+
+@media (min-width: 767px) {
+  /* line 326, ../sass/grayscale.scss */
+  .content-section {
+    padding-top: 150px;
+  }
+
+  /* line 330, ../sass/grayscale.scss */
+  .download-section {
+    padding: 100px 0;
+  }
+
+  /* line 334, ../sass/grayscale.scss */
+  #map {
+    height: 400px;
+    margin-top: 250px;
+  }
+}
+/* line 340, ../sass/grayscale.scss */
+.btn {
+  text-transform: uppercase;
+  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  border-radius: 0;
+}
+
+/* line 350, ../sass/grayscale.scss */
+.btn-default {
+  border: 1px solid #42DCA3;
+  color: #42DCA3;
+  background-color: transparent;
+}
+/* line 354, ../sass/grayscale.scss */
+.btn-default:hover, .btn-default:focus {
+  border: 1px solid #42DCA3;
+  outline: none;
+  color: black;
+  background-color: #42DCA3;
+}
+
+/* line 363, ../sass/grayscale.scss */
+ul.banner-social-buttons {
+  margin-top: 0;
+}
+@media (max-width: 1199px) {
+  /* line 363, ../sass/grayscale.scss */
+  ul.banner-social-buttons {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 369, ../sass/grayscale.scss */
+  ul.banner-social-buttons li {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  /* line 373, ../sass/grayscale.scss */
+  ul.banner-social-buttons li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* line 380, ../sass/grayscale.scss */
+footer {
+  padding: 50px 0;
+}
+/* line 382, ../sass/grayscale.scss */
+footer p {
+  margin: 0;
+}
+
+/* line 387, ../sass/grayscale.scss */
+::-moz-selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* line 393, ../sass/grayscale.scss */
+::selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* line 399, ../sass/grayscale.scss */
+img::selection {
+  background: transparent;
+}
+
+/* line 403, ../sass/grayscale.scss */
+img::-moz-selection {
+  background: transparent;
+}
+
+/* line 407, ../sass/grayscale.scss */
+body {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
+
+/* line 411, ../sass/grayscale.scss */
+.row {
+  margin-bottom: 30px;
+}

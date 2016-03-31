@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MK's RT</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <span class="light">MK's RT</span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Objectives <span class="caret"></span></a>
+                        <ul class="dropdown-menu objectifs-menu">
+                            <li class="objectif"><a class="page-scroll" href="#prim">Additional Primitives</a></li>
+                            <li class="objectif"><a class="page-scroll" href="#antia">Anti-aliasing</a></li>
+                            <li class="objectif"><a class="page-scroll" href="#refra">Refraction</a></li>
+                            <li class="objectif"><a class="page-scroll" href="#refl">Glossy Reflection</a></li>
+                            <li class="objectif"><a class="page-scroll" href="#dof">Depth of Field</a></li>
+                            <li class="objectif"><a class="page-scroll" href="#soft">Soft Shadows</a></li>
+                            <li class="objectif"><a class="page-scroll" href="#frac">Fractal Landscapes</a></li>
+                            <li class="objectif"><a class="page-scroll" href="#toon">Toon Shading</a></li>
+                            <li class="objectif"><a class="page-scroll" href="#pain">Painterly Rendering</a></li>
+                            <li class="objectif"><a class="page-scroll" href="#final">Final Scene</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li>
+                        <a class="page-scroll" href="#download">Download</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-bg"></div>
+        <div class="intro-overlay"></div>
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="brand-heading">Distributed<br>(Non)<br>Photo<wbr>realistic<br>Rendering</h1>
+                        <p class="intro-text">an extended ray tracer<br>by madigan kim</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Directory -->
+    <!-- <section id="about" class="container download-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Objectives</h2>
+                <ul class="list-inline banner-social-buttons">
+                    <li><a href="#prim" class="btn btn-default btn-lg page-scroll">Additional Primitives</a></li>
+                    <li><a href="#antia" class="btn btn-default btn-lg page-scroll">Anti-aliasing</a></li>
+                    <li><a href="#refra" class="btn btn-default btn-lg page-scroll">Refraction</a></li>
+                    <li><a href="#refl" class="btn btn-default btn-lg page-scroll">Glossy Reflection</a></li>
+                    <li><a href="#dof" class="btn btn-default btn-lg page-scroll">Depth of Field</a></li>
+                    <li><a href="#soft" class="btn btn-default btn-lg page-scroll">Soft Shadows</a></li>
+                    <li><a href="#frac" class="btn btn-default btn-lg page-scroll">Fractal Landscapes</a></li>
+                    <li><a href="#toon" class="btn btn-default btn-lg page-scroll">Toon Shading</a></li>
+                    <li><a href="#pain" class="btn btn-default btn-lg page-scroll">Painterly Rendering</a></li>
+                    <li><a href="#final" class="btn btn-default btn-lg page-scroll">Final Scene</a></li>
+                </ul>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Additional Primitives -->
+    <section id="prim" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2>Additional Primitives</h2>
+                <p>Truncated cylinder and cone primitives.</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-6 col-xs-12"><img class="img-responsive center-block" src="img/cone.png" alt="cone" /></div>
+            <div class="col-md-6 col-xs-12"><img class="img-responsive center-block" src="img/cylinder.png" alt="cylinder" /></div>
+        </div>
+    </section>
+
+    <!-- Anti-aliasing -->
+    <section id="antia" class="container content-section text-center">
+        <div class="row text-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2>Anti-aliasing</h2>
+                <p>Image pixels subdivided into an NxN grid.
+                    <br>Jittered sample of primary rays taken from each subpixel.</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-6 col-xs-12"><img class="img-responsive center-block" src="img/cone-noaa.png" alt="not anti-aliased" /></div>
+            <div class="col-md-6 col-xs-12"><img class="img-responsive center-block" src="img/cone.png" alt="anti-aliased" /></div>
+        </div>
+    </section>
+
+    <!-- Refraction -->
+    <section id="refra" class="container content-section text-center">
+        <div class="row text-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2>Refraction</h2>
+                <p>Transmission rays obtained using Snell's law.
+                    <br>Index of refraction and transparency added as parameters to Materials.</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-6 col-xs-12"><img class="img-responsive center-block" src="img/refra-air.png" alt="air" /></div>
+            <div class="col-md-6 col-xs-12"><img class="img-responsive center-block" src="img/refra-water.png" alt="water" /></div>
+        </div>
+    </section>
+
+    <!-- Glossy Reflection -->
+    <section id="refl" class="container content-section text-center">
+        <div class="row text-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2>Glossy Reflection</h2>
+                <p>Random sample taken based on polar/azimuth angles of reflected ray.
+                    <br>Colour of sample rays weighted based on cosine probabilty distribution.</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-6 col-xs-12"><img class="img-responsive center-block" src="img/refl-nogloss.png" alt="no gloss" /></div>
+            <div class="col-md-6 col-xs-12"><img class="img-responsive center-block" src="img/refl-gloss.png" alt="gloss" /></div>
+        </div>
+    </section>
+
+    <!-- Depth of Field -->
+    <section id="dof" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2>Depth of Field</h2>
+                <p>Gridded aperture lens centered around each primary ray.
+                    <br>Sample rays from each grid cell aimed at focal point, where the primary
+                    ray hits the focal plane.
+                    <br>Focal distance and aperture diameter added as
+                    optional parameters to <i>render</i> command</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div id="dof-carousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#dof-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#dof-carousel" data-slide-to="1"></li>
+                    <li data-target="#dof-carousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img class="img-responsive center-block" src="img/dof-purple.png" alt="purple">
+                        <!-- <div class="carousel-caption">purple</div> -->
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive center-block" src="img/dof-red.png" alt="red">
+                        <!-- <div class="carousel-caption">red</div> -->
+                    </div>
+                    <div class="item">
+                        <img class="img-responsive center-block" src="img/dof-orange.png" alt="orange">
+                        <!-- <div class="carousel-caption">orange</div> -->
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#dof-carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#dof-carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soft Shadows -->
+    <section id="soft" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2>Area Lights / Soft Shadows</h2>
+                <p>Random sample rays taken from intersection point on a surface to area light.
+                    <br>Intensity from light rays weighted based on proximity to center of light source.</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-6 col-xs-12"><img class="img-responsive center-block" src="img/soft-50.png" alt="soft50" /></div>
+            <div class="col-md-6 col-xs-12"><img class="img-responsive center-block" src="img/soft-100.png" alt="soft100" /></div>
+        </div>
+    </section>
+
+    <!-- Fractal Landscape -->
+    <section id="frac" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2>Fractal Landscape</h2>
+                <p>Not implemented</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12 col-xs-12"><img class="img-responsive center-block" src="img/sad.gif" alt="sad times" /></div>
+        </div>
+    </section>
+
+    <!-- Toon Shading -->
+    <section id="toon" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2>Toon Shading</h2>
+                <p>Flat colours based on luminance.
+                    <br>Edges detected using surface normals / 3x3 Sobel filter.</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4 col-xs-12"><img class="img-responsive center-block" src="img/toon-nocel.png" alt="normal" /></div>
+            <div class="col-md-4 col-xs-12"><img class="img-responsive center-block" src="img/toon-normal.png" alt="surface norms" /></div>
+            <div class="col-md-4 col-xs-12"><img class="img-responsive center-block" src="img/toon-sobel.png" alt="sobel filter" /></div>
+        </div>
+    </section>
+
+    <!-- Painterly Rendering -->
+    <section id="pain" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2>Painterly Rendering</h2>
+                <p>Based on Hertzmann's <i>Painterly Rendering with Curved Brush Strokes of Multiple Sizes</i> (1998).
+                    <br></p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-6 col-xs-12"><img class="img-responsive center-block" src="img/paint-tol.png" alt="high tolerance" /></div>
+            <div class="col-md-6 col-xs-12"><img class="img-responsive center-block" src="img/paint-small.png" alt="small brushes" /></div>
+        </div>
+    </section>
+
+    <!-- Final Scene -->
+    <section id="final" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2>Final Scenes</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-6 col-xs-12"><img class="img-responsive center-block" src="img/toon-gloss.png" alt="toon gloss" /></div>
+            <div class="col-md-6 col-xs-12"><img class="img-responsive center-block" src="img/toon-dof.png" alt="toon dof" /></div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12 col-xs-12"><img class="img-responsive center-block" src="img/toon.gif" alt="toon gif" /></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>CS 488 : Introduction to Computer Graphics</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+</body>
+
+</html>
